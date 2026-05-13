@@ -1,0 +1,4 @@
+{  "layer": "boundaries:{{ m.collection}}",     
+	"property": "id",     
+	"values": {{ m_urls.coll_items.features | map(attribute='id') | list }}     
+}
