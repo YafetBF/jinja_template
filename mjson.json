@@ -1,5 +1,5 @@
 {
-  "edit_name2": {{coll_name}},
+  "edit_name2": {{m.coll_name}},
   "help": "Help-Value",
   "success": true,
   "result": "Success-value",
