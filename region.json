@@ -1,4 +1,4 @@
-{
+{{m.collection }}:{
     "layerName":{{m.collection }},
     "server": ,
     "regionProp": {{m.uniqueId }},
