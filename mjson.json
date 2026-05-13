@@ -1,4 +1,5 @@
 {
+  "edit_name": {{coll_name}},
   "help": "Help-Value",
   "success": true,
   "result": "Success-value",
