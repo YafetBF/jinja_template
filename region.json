@@ -1,0 +1,22 @@
+{
+    "layerName":{{m.collection }},
+    "server": ,
+    "regionProp": {{m.uniqueId }},
+    "uniqueIdProp": {{m.uniqueId }},
+    "aliases": [
+        {{m.uniqueId }}
+     ],
+    "digits": 255,
+    "description": {{m_urls.collection.title}},
+    "regionIdsFile": {  "layer": "boundaries:{{ m.collection}}",     
+                        "property": "id",     
+                        "values": {{ m_urls.coll_items.features | map(attribute='id') | list }}     
+                    },
+    "serverType": "MVT",
+    "serverType": "MVT",
+    "serverSubdomains": [],
+    "serverMinZoom": 0,
+    "serverMaxNativeZoom": 12,
+    "serverMaxZoom": 28,
+    "bbox": {{m_urls.collection.extent.spatial.bbox[0]}}
+}
