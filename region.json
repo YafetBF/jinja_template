@@ -1,6 +1,6 @@
 "{{m.collection }}": {
     "layerName":{{m.collection }},
-    "server": "https://data.review.fao.org/geospatial/v2/api/maps/maps/{{m.catalog}}/map/tiles",
+    "server": "https://data.review.fao.org/geospatial/v2/api/maps/tiles/catalogs/{{m.catalog}}/tiles/{z}/{x}/{y}.mvt?collections={{m.collection}}",
     "regionProp": {{m.uniqueId }},
     "uniqueIdProp": {{m.uniqueId }},
     "aliases": [
