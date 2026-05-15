@@ -1,13 +1,13 @@
-"{{m.collection }}": {
+"{{m.collection}}": {
     "layerName":"default",
     "server": "https://data.review.fao.org/geospatial/v2/api/maps/tiles/catalogs/{{m.catalog}}/tiles/{z}/{x}/{y}.mvt?collections={{m.collection}}",
-    "regionProp": {{m.uniqueId }},
-    "uniqueIdProp": {{m.uniqueId }},
+    "regionProp": "{{m.uniqueId }}",
+    "uniqueIdProp": "{{m.uniqueId }}",
     "aliases": [
-        {{m.uniqueId }}, {{m.collection }}
+        "{{m.uniqueId }}", "{{m.collection}}"
      ],
     "digits": 255,
-    "description": {{m_urls.collection.title}},
+    "description": "{{m_urls.collection.title}}",
     "regionIdsFile": "https://data.review.fao.org/geospatial/v2/api/tools/template/interpolate?t_url=https%3A%2F%2Fraw.githubusercontent.com%2FYafetBF%2Fjinja_template%2Fmain%2FregionIdFiles.json&m_urls=%7B%22collection%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fcatalog%2Fstac%2Fcatalogs%2F{{m.catalog}}%2Fcollections%2F{{m.collection}}%22%2C%20%22coll_items%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fcatalog%2Fstac%2Fcatalogs%2F{{m.catalog}}%2Fcollections%2F{{m.collection}}%2Fitems%3Flimit%3D10%26offset%3D0%22%2C%22map%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fmaps%2Fmaps%2F{{m.catalog}}%2Fmap%2Ftiles%22%7D&m=%7B%22catalog%22%3A%20%22{{m.catalog}}%22%2C%20%22collection%22%3A%20%22{{m.collection}}%22%2C%20%22uniqueId%22%3A%20%22id%22%7D",
     "serverType": "MVT",
     "serverSubdomains": [],
