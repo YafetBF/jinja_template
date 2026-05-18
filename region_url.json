@@ -8,7 +8,7 @@
      ],
     "digits": 255,
     "description": "{{m_urls.collection.title}}",
-    "regionIdsFile": "https://data.review.fao.org/geospatial/v2/api/tools/template/interpolate?t_url=https%3A%2F%2Fraw.githubusercontent.com%2FYafetBF%2Fjinja_template%2Fmain%2FregionIdFiles.json&m_urls=%7B%20%22collection%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fcatalog%2Fstac%2Fcatalogs%2Fadm2_catalog_12%2Fcollections%2Fsentinel%22%2C%20%20%20%20%20%22coll_items%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fcatalog%2Fstac%2Fcatalogs%2Fadm2_catalog_12%2Fcollections%2Fsentinel%2Fitems%3Flimit%3D10%26offset%3D0%22%20%7D&m=%7B%22catalog%22%3A%20%22adm2_catalog_12%22%2C%20%22collection%22%3A%20%22sentinel%22%2C%20%22uniqueId%22%3A%20%22id%22%7D&r_mt=application%2Fjson&et=true",
+    "regionIdsFile": "https://data.review.fao.org/geospatial/v2/api/tools/template/interpolate?t_url=https%3A%2F%2Fraw.githubusercontent.com%2FYafetBF%2Fjinja_template%2Fmain%2FregionIdFiles.json&m_urls=%7B%20%22collection%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fcatalog%2Fstac%2Fcatalogs%2Fadm2_catalog_12%2Fcollections%2Fsentinel%22%2C%20%20%20%20%20%22coll_items%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fcatalog%2Fstac%2Fcatalogs%2Fadm2_catalog_12%2Fcollections%2Fsentinel%2Fitems%3Flimit%3D1000%26offset%3D0%22%20%7D&m=%7B%22catalog%22%3A%20%22adm2_catalog_12%22%2C%20%22collection%22%3A%20%22sentinel%22%2C%20%22uniqueId%22%3A%20%22id%22%7D&r_mt=application%2Fjson&et=true",
     "serverType": "MVT",
     "serverSubdomains": [],
     "serverMinZoom": 0,
