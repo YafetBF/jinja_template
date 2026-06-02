@@ -1,0 +1,4 @@
+{  "layer": "default",     
+	"property": "CODE",     
+	"values": {{ m_urls.coll_items.features | map(attribute='CODE') | list }}     
+}
