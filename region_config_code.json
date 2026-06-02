@@ -6,7 +6,7 @@
                 "layerName": "default",
                 "server": "https://data.review.fao.org/geospatial/v2/api/maps/tiles/catalogs/{{m.catalog}}/tiles/{z}/{x}/{y}.mvt?collections={{coll.id}}",
                 "regionProp": "CODE",
-                "uniqueIdProp": "Fid",
+                "uniqueIdProp": "FID",
                 "aliases": [
                     "{{coll.id}}"
                 ],
