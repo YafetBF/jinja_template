@@ -1,5 +1,5 @@
 {  
 	"layer": "default",     
 	"property": "CODE",     
-	"values": {{ m_urls.coll_items.features | map(attribute='CODE') | list }}     
+	"values": {{ m_urls.coll_items.features.properties | map(attribute='CODE') | list }}     
 }
