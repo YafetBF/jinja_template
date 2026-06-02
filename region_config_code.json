@@ -1,0 +1,25 @@
+{
+  "comments": "Matching takes place in the order defined in this file. Place code matches before name matches, and smaller regions before larger ones.",
+  "regionWmsMap": {
+        {%- for coll in m_urls.collections.collections | list  -%}
+            "{{coll.id}}": {
+                "layerName": "default",
+                "server": "https://data.review.fao.org/geospatial/v2/api/maps/tiles/catalogs/{{m.catalog}}/tiles/{z}/{x}/{y}.mvt?collections={{coll.id}}",
+                "regionProp": "CODE",
+                "uniqueIdProp": "Fid",
+                "aliases": [
+                    "{{coll.id}}"
+                ],
+                "digits": 255,
+                "description": "{{coll.title}}",        
+                "regionIdsFile": "https://data.review.fao.org/geospatial/v2/api/tools/template/interpolate?t=%7B%22layer%22%3A%22default%22%2C%22property%22%3A%22CODE%22%2C%22values%22%3A%5B%7B%25%20for%20feature%20in%20m_urls.coll_items.features%20%25%7D%22%7B%7Bfeature.properties.CODE%7D%7D%22%7B%25%20if%20not%20loop.last%20%25%7D%2C%7B%25%20endif%20%25%7D%7B%25%20endfor%20%25%7D%5D%7D&m_urls=%7B%22coll_items%22%3A%20%22https%3A%2F%2Fdata.review.fao.org%2Fgeospatial%2Fv2%2Fapi%2Fcatalog%2Ffeatures%2Fcatalogs%2F{{m.catalog}}%2Fcollections%2F{{coll.id}}%2Fitems%3Flimit%3D25%26offset%3D0%26filter-lang%3Dcql2-text%26properties%3DCODE%26skipGeometry%3Dtrue%26f%3Dgeojson%22%7D&r_mt=application%2Fjson",
+                "serverType": "MVT",
+                "serverSubdomains": [],
+                "serverMinZoom": 0,
+                "serverMaxNativeZoom": 12,
+                "serverMaxZoom": 28,
+                "bbox": {{coll.extent.spatial.bbox[0]}}
+            }{%- if not loop.last -%},{%- endif -%}    
+        {%- endfor -%}
+    }
+}
