@@ -1,5 +1,9 @@
-{  
-	"layer": "default",     
-	"property": "CODE",     
-	"values": {{ m_urls.coll_items.features.properties | map(attribute='CODE') | list }}     
+{
+  "layer": "default",
+  "property": "CODE",
+  "values": [
+    {% for feature in m_urls.coll_items.features %}
+      "{{ feature.properties.CODE }}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
 }
