@@ -8,7 +8,7 @@
                 "regionProp": "CODE",
                 "uniqueIdProp": "FID",
                 "aliases": [
-                    "{{coll.id}}"
+                    "{{m.catalog}}_{{coll.id}}"
                 ],
                 "digits": 255,
                 "description": "{{coll.title}}",        
